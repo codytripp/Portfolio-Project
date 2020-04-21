@@ -34,4 +34,6 @@ tl.fromTo(
     0.5,
     {opacity: 0, x: 30},
     {opacity: 1, x: 0},
-    '-=0.5')
+    '-=0.5');
+
+    ScrollReveal().reveal('.punchline', {delay: 1000});
