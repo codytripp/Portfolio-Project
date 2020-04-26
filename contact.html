@@ -23,10 +23,17 @@
                       <a style="color:white" class="nav-link" href="./portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a style="color:white" class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
                       <a style="color:white" class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/codytripp">
+                        <img src="assets/images/github-icon-23.png" alt="github" width="25px" height="25px">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/cody-tripp-1a1647117/">
+                        <img src="assets/images/computer-icons-social-media-linkedin-small-business-social-media.jpg" alt="github" width="25px" height="25px">
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -36,13 +43,100 @@
     </header>
 
     <div class="slider"></div>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            
+    <section class="mb-4">
+
+      <!--Section heading-->
+      <h2 class="h1-responsive font-weight-bold text-center my-4" style="color:white">Contact</h2>
+      <!--Section description-->
+      
+  
+      <div class="row">
+  
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+  
+                  <!--Grid row-->
+                  <div class="row">
+  
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" id="name" name="name" class="form-control">
+                              <label style="color:white" for="name" class="">Your name</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+  
+                      <!--Grid column-->
+                      <div class="col-md-6">
+                          <div class="md-form mb-0">
+                              <input type="text" id="email" name="email" class="form-control">
+                              <label style="color:white" for="email" class="">Your email</label>
+                          </div>
+                      </div>
+                      <!--Grid column-->
+  
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="md-form mb-0">
+                              <input type="text" id="subject" name="subject" class="form-control">
+                              <label style="color:white" for="subject" class="">Subject</label>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+                  <!--Grid row-->
+                  <div class="row">
+  
+                      <!--Grid column-->
+                      <div class="col-md-12">
+  
+                          <div class="md-form">
+                              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                              <label style="color:white" for="message">Your message</label>
+                          </div>
+  
+                      </div>
+                  </div>
+                  <!--Grid row-->
+  
+              </form>
+  
+              <div class="text-center text-md-left">
+                  <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+              </div>
+              <div class="status"></div>
           </div>
-        </div>
-    </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+              <ul class="list-unstyled mb-0">
+                  <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                      <p style="color:white">Mesa,AZ, USA</p>
+                  </li>
+  
+                  <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                      <p style="color:white">(480) 528-8370</p>
+                  </li>
+  
+                  <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                      <p style="color:white">codydeantripp@gmail.com</p>
+                  </li>
+              </ul>
+          </div>
+          <!--Grid column-->
+  
+      </div>
+  
+  </section>
+       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
